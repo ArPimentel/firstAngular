@@ -1,0 +1,56 @@
+<h1>First user</h1>
+<p>A brief description about our first user.</p>
+
+<ul>
+  <li>First name: {{ prenom }}</li>
+  <li>Last name: {{ nom }}</li>
+  <li>Age: {{ age }}</li>
+  <li>
+    Hobbies:
+    <ul>
+      <li>1: {{ hobby.hobbyUn }}</li>
+      <li>2: {{ hobby.hobbyDeux }}</li>
+      <li>3: {{ hobby.hobbyTrois }}</li>
+    </ul>
+  </li>
+  <li>Email: {{ email }}</li>
+</ul>
+
+<button (click)="onClick()">More information</button>
+
+<h1>Edit</h1>
+<form action="">
+    <div>
+        <label for="prenom">First name</label
+        ><input type="text" [(ngModel)]="prenom" name="prenom" />
+      </div>
+  <div>
+    <label for="nom">Last name</label
+    ><input type="text" [(ngModel)]="nom" name="nom" />
+  </div>
+  <div>
+    <label for="age">Age</label
+    ><input type="text" [(ngModel)]="age" name="age" />
+  </div>
+
+  <div>
+    <h4>
+        Hobbies:
+    </h4>
+    <label for="hobbyUn">1</label
+    ><input type="text" [(ngModel)]="hobby.hobbyUn" name="hobbyUn" />
+  </div>
+
+  <div>
+    <label for="hobbyDeux">2</label
+    ><input type="text" [(ngModel)]="hobby.hobbyDeux" name="hobbyDeux" />
+  </div>
+  <div>
+    <label for="hobbyTrois">3</label
+    ><input type="text" [(ngModel)]="hobby.hobbyTrois" name="hobbyTrois" />
+  </div>
+  <div>
+    <label for="email">E-mail</label
+    ><input type="text" [(ngModel)]="email" name="email" />
+  </div>
+</form>
